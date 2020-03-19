@@ -1,3 +1,8 @@
+*{
+
+    font-family: arial;
+}
+
 body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -25,7 +30,17 @@ background-color: yellow;
     grid-row-start: 1;
     grid-row-end: 3;
     background-color: rgb(160, 209, 231);
+    display: flex;
+    align-items: center;
+    background-image: url('img/family.png')
+    
 }
+
+#firsttext{
+
+    padding: 90px;
+}
+
 
 #learnmore{
     grid-column-start: 2;
@@ -51,12 +66,34 @@ display: flex;
     grid-column-start: 2;
     grid-column-end: 6;
     grid-row-start: 7;
-    grid-row-end: 9;
+    grid-row-end: 8;
 
 }
 
-li {
-    float: left;
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    
+
+}
+
+ul {
+    list-style-type: none;
+   
+    
+  }
+
+
+
+
+  li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    
+    text-decoration: none;
   }
 
 
@@ -120,6 +157,11 @@ li {
 
 #main #squares #sq5{
     background-color: white;
+}
+
+#yourpersonal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 footer{
